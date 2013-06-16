@@ -2,13 +2,13 @@ import AssemblyKeys._
 
 name := "LogbackWAssembly"
 
-version := "1.0"
+version := "1.1"
 
-scalaVersion := "2.9.1"
+scalaVersion := "2.10.2"
 
-resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
+resolvers += Classpaths.typesafeReleases
 
-libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.0.1"
+libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.0.13"
 
 seq(assemblySettings: _*)
 
